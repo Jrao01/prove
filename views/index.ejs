@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECTEC</title>
+</head>
+<body>
+
+    <header>
+        <ul>
+            <li><a href="">opcion1</a></li>
+            <li><a href="">opcion2</a></li>
+            <li><a href="">opcion3</a></li>
+            <li><a href="">opcion4</a></li>
+        </ul>
+    </header>
+    <main>
+        <aside></aside>
+        <table>
+            <thead>
+                <th>id</th>
+                <th>nombre</th>
+                <th>telefono</th>
+                <th>correo</th>
+                <th>carrera</th>
+                <th>status</th>
+            </thead>
+            <tbody>
+                <%Datos.forEach(student=>{%>
+                    <tr>
+                        <td><%=student.id%></td>
+                        <td><%=student.nombre%></td>
+                        <td><%=student.telefono%></td>
+                        <td><%=student.correo%></td>
+                        <td><%=student.carrera_Id%></td>
+                        <td><%=student.status_Id%></td>
+                    </tr>
+                    
+                    <%})%>
+            </tbody>
+        </table>
+    </main>
+    
+</body>
+</html>
